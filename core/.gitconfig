@@ -1,0 +1,7 @@
+[user]
+	name = meta
+	email = hosaka-corp@users.noreply.github.com
+[core]
+	autocrlf = input
+	whitespace = cr-at-eol
+	eol = lf

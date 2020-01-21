@@ -1,0 +1,27 @@
+URxvt*foreground:   #3e3e3e
+URxvt*background:   [87]#f9f6f4
+
+URxvt*cursorColor:  #3e3e3e
+URxvt*color0:       #3e3e3e
+URxvt*color8:       #5d5d5d
+URxvt*color1:       #966575
+URxvt*color9:       #6e4a56
+URxvt*color2:       #659675
+URxvt*color10:      #486b53
+URxvt*color3:       #968665
+URxvt*color11:      #89754e
+URxvt*color4:       #657596
+URxvt*color12:      #5f7ab1
+URxvt*color5:       #756596
+URxvt*color13:      #807793
+URxvt*color6:       #658e96
+URxvt*color14:      #126a7b
+URxvt*color7:       #d0d0d0
+URxvt*color15:      #f6f6f6
+
+! The second font specified is the fallback for CJK glyphs
+URxvt*font:         xft:Hack:style=Regular:size=12, xft:Migu 2M:style=Regular:size=12
+URxvt*boldFont:     xft:Hack:style=Bold:size=12, xft:Migu 2M:style=Bold:size=12
+URxvt*italicFont:   xft:Hack:style=Italic:size=12, xft:Migu 2M:style=Regular:size=12
+URxvt*boldItalicFont: xft:Hack:style=Bold Italic:size=12
+

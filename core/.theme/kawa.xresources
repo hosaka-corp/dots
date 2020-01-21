@@ -1,0 +1,10 @@
+#define blk	#6c6c6c
+#define red	#ffafdf
+#define grn     #afffd7
+#define ylw     #ffffaf
+#define blu     #ffdfff
+#define mag     #afafd7
+#define cyn     #afffff
+#define wht     #C8CACC
+#define bg	#2d2d2d
+#define fg      #FFFFFF

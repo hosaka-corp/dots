@@ -1,0 +1,39 @@
+!! ============================================================================
+!! URxvt settings
+
+! Pull color-scheme and font settings from a different configuration file
+#include ".theme/tegami.xresources"
+
+! ibus (IME) for URxvt
+URxvt*inputMethod:		ibus
+URxvt*preeditType:		OverTheSpot
+
+! Internal border in pixels
+URxvt*internalBorder:		5
+
+! Dont draw a scrollbar
+URxvt*scrollBar:		false
+
+! Blink the cursor
+URxvt*cursorBlink:		true
+
+! Other URxvt settings I dont understand
+URxvt*perl-ext-common:		default,matcher,resize-font
+URxvt*iso14755:			False
+URxvt*depth:			32
+URxvt.keysym.C-minus:		resize-font:smaller
+URxvt.keysym.C-plus:		resize-font:bigger
+URxvt.resize-font.step:		2
+
+! I think this is set in your compton config
+!URxvt*blurRadius:		3
+
+!! ============================================================================
+!! xfont rendering
+
+Xft*dpi:			102
+Xft*autohint:			false
+Xft*lcdfilter:			lcddefault
+Xft*hinting:			false
+Xft*hintstyle:			hintslight
+Xft*antialias:			true

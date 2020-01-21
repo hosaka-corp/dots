@@ -1,0 +1,86 @@
+
+[bar/main]
+
+modules-left = date time network memory filesystem xkeyboard
+modules-center = 
+modules-right = 
+enable-ipc = true
+
+; Use the Japanese locale
+locale = ja_JP.UTF-8
+
+;width = 3830
+width = 1440
+height = 50
+;offset-y = 10
+;offset-x = 20
+offset-y = 2
+offset-x = 5
+
+bottom = false
+monitor = DisplayPort-1
+wm-restack = none
+override-redirect = false
+;fixed-center = true
+padding-left = 5 
+padding-right = 5
+module-margin = 1.0
+
+;font-0 = "m+ 1c Regular:size=20;3"
+font-0 = "Rounded Mplus 1c:size=21;3"
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=23;5"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=23;5"
+font-3 = "Font Awesome 5 Brands:pixelsize=23;5"
+
+;background = #d8eee8e1
+background = #e8f9f6f4
+foreground = #3e3e3e
+border-color = #888888
+border-size = 1
+
+; Underline size
+line-size = 5
+
+
+
+; -----------------------------------------------------------------------------
+; Modules
+
+[module/time]
+type = internal/date
+interval = 1.0
+date =  %H:%M:%S
+label-underline =  #c2a098
+
+[module/date]
+type = internal/date
+date =  %A %B%e
+label = %date%
+label-underline =  #c2a098
+
+[module/memory]
+type = internal/memory
+label =  %gb_used%
+interval = 5
+label-underline =  #c2a098
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+mount-1 = /data
+interval = 60
+spacing = 2
+label-mounted =  %mountpoint%: %free%
+label-mounted-underline =  #c2a098
+
+[module/network]
+type = internal/network
+interface = wlp7s0
+label-connected =  %local_ip%
+label-connected-underline =  #c2a098
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist = num lock
+label-layout =  %layout%
+label-layout-underline =  #c2a098

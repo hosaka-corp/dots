@@ -1,0 +1,21 @@
+# Use PulseAudio by default
+pcm.!default {
+  type pulse
+  #format S24_LE
+  #rate 96000
+  fallback "sysdefault"
+  hint {
+    show on
+    description "Default ALSA Output (currently PulseAudio Sound Server)"
+  }
+}
+
+#pcm.!default {
+#    format S24_LE
+#    rate 96000
+#    type hw
+#    card 2
+#    device 0
+#}
+
+# vim:set ft=alsaconf:
